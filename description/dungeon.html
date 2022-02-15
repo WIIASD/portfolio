@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-ZiyangLi</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+<style>
+body {
+	background-color: linen;
+}
+</style>
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#d-procedural-tilemap-dungeon-generator">2D Procedural Tilemap Dungeon Generator</a>
+<ul>
+<li>
+<ul>
+<li><a href="#cameracontroller.cs">CameraController.cs</a></li>
+<li><a href="#roombase.cs">RoomBase.cs</a></li>
+<li><a href="#rectangleroom.cs">RectangleRoom.cs</a></li>
+<li><a href="#roomgenerator.cs">RoomGenerator.cs</a></li>
+<li><a href="#dungeongenerator.cs">DungeonGenerator.cs</a></li>
+<li><a href="#roomtilepalette.cs">RoomTilePalette.cs</a></li>
+<li><a href="#roomtilepalettemanager.cs">RoomTilePaletteManager.cs</a></li>
+<li><a href="#controlpanel.cs">ControlPanel.cs</a></li>
+<li><a href="#zmonosingleton.cs">ZMonoSingleton.cs</a></li>
+<li><a href="#ztools.cs">ZTools.cs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="d-procedural-tilemap-dungeon-generator">2D Procedural Tilemap Dungeon Generator</h1>
+<p><strong>Github page:</strong> <a href="https://github.com/WIIASD/Procedural-2D-Tilemap-Dungeon-Generator">https://github.com/WIIASD/Procedural-2D-Tilemap-Dungeon-Generator</a><br>
+<strong>Coded by:</strong> Ziyang Li (WIIASD)<br>
+<strong>Last Edit:</strong> 2/14/2022<br>
+<strong>Directory Structure:</strong></p>
+<ul>
+<li>Assets/
+<ul>
+<li>Scripts/
+<ul>
+<li>Camera/
+<ul>
+<li><a href="#cameracontroller.cs">CameraController.cs</a></li>
+</ul>
+</li>
+<li>Room/
+<ul>
+<li><a href="#roombase.cs">RoomBase.cs</a></li>
+<li><a href="#rectangleroom.cs">RectangleRoom.cs</a></li>
+<li>Generators/
+<ul>
+<li><a href="#roomgenerator.cs">RoomGenerator.cs</a></li>
+<li><a href="#dungeongenerator.cs">DungeonGenerator.cs</a></li>
+</ul>
+</li>
+<li>TilePalette/
+<ul>
+<li><a href="#roomtilepalette.cs">RoomTilePalette.cs</a></li>
+<li><a href="#roomtilepalettemanager.cs">RoomTilePaletteManager.cs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>UI/
+<ul>
+<li><a href="#controlpanel.cs">ControlPanel.cs</a></li>
+</ul>
+</li>
+<li>Util/
+<ul>
+<li><a href="#zmonosingleton.cs">ZMonoSingleton.cs</a></li>
+<li><a href="#ztools.cs">ZTools.cs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="cameracontroller.cs">CameraController.cs</h3>
+<p>Component attached to the main camera, responsible for its movement.</p>
+<h3 id="roombase.cs">RoomBase.cs</h3>
+<p>Base class for room structure</p>
+<h3 id="rectangleroom.cs">RectangleRoom.cs</h3>
+<p>Inherit from RoomBase.cs, structure of rectangular rooms</p>
+<h3 id="roomgenerator.cs">RoomGenerator.cs</h3>
+<p>Component exist in the scene, responsible for generating rooms with provided tile palette in corresponding tilemaps</p>
+<h3 id="dungeongenerator.cs">DungeonGenerator.cs</h3>
+<p>Component exist in the scene, responsible for generating the whole dungeon using a room generator</p>
+<h3 id="roomtilepalette.cs">RoomTilePalette.cs</h3>
+<p>Scriptable object containing data for individual tile palette</p>
+<h3 id="roomtilepalettemanager.cs">RoomTilePaletteManager.cs</h3>
+<p>Singleton Manager class that manages palette scriptable objects</p>
+<h3 id="controlpanel.cs">ControlPanel.cs</h3>
+<p>This class is responsiblel for the UI panel in the Dungeon Scene</p>
+<h3 id="zmonosingleton.cs">ZMonoSingleton.cs</h3>
+<p>Base class for singleton design pattern</p>
+<h3 id="ztools.cs">ZTools.cs</h3>
+<p>Static class that provides various mathematical/structural tools</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
